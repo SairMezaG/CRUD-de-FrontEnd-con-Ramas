@@ -2,7 +2,7 @@ import React from 'react';
 import BotonEliminarUsuario from './BotonEliminarUsuario';
 import BotonEditarUsuario from './BotonEditarUsuario';
 import ContadorRegistros from './ContadorDeRegistros';
-import "../Estilos/Tabla.css";
+
 
 const Tabla = ({ usuarios, onEditar, onEliminar }) => {
   const cantidadRegistros = usuarios.length;

@@ -1,5 +1,5 @@
 import React from 'react';
-import "../Estilos/Filtro.css";
+
 
 const Filtro = ({ onFiltrar }) => {
   return (
