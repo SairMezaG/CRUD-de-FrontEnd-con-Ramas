@@ -3,6 +3,8 @@ import FormularioModal from './Componentes/FormularioModal';
 import Tabla from './Componentes/Tabla';
 import Filtro from './Componentes/Filtro';
 import FormularioEdicion from './Componentes/FormularioEdicion';
+import "./Estilos/BotonDeRegistro.css";
+
 
 const App = () => {
   const [usuarios, setUsuarios] = useState([]);
@@ -67,15 +69,33 @@ const App = () => {
   return (
     <div>
       <h1>Gestión de Usuarios</h1>
-      <button onClick={abrirModalAgregar}>Registrar nuevo usuario</button>
+      <button  className='botonDeRegistro'  onClick={abrirModalAgregar}   >Registrar nuevo usuario</button>
+      <hr />
+      <hr />
+       
+      
       {mostrarModalAgregar && <FormularioModal onGuardar={agregarUsuario} onClose={cerrarModalAgregar} />}
+      <hr />
+      <hr />
+      <br />
+      <br />
+      <br />
       <Filtro onFiltrar={handleFiltrarPorLetra} />
-      <select value={cantidadRegistros} onChange={handleCambiarCantidadRegistros}> {/* Agrega el select para seleccionar la cantidad de registros */}
+      <hr />
+      <hr />
+      <br />
+      <br />
+      <select value={cantidadRegistros} onChange={handleCambiarCantidadRegistros}> 
         <option value="5">Mostrar 5 registros</option>
         <option value="10">Mostrar 10 registros</option>
         <option value="15">Mostrar 15 registros</option>
         <option value="20">Mostrar 20 registros</option>
       </select>
+      <hr />
+      <hr />
+      <br />
+      <br />
+      <br />
       <Tabla usuarios={usuariosAMostrar} onEditar={editarUsuario} onEliminar={eliminarUsuario} />
       {mostrarModalEdicion && usuarioEditando && (
         <FormularioEdicion usuario={usuarioEditando} onGuardar={guardarEdicion} onClose={cerrarModalEdicion} />

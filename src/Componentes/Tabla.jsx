@@ -2,6 +2,7 @@ import React from 'react';
 import BotonEliminarUsuario from './BotonEliminarUsuario';
 import BotonEditarUsuario from './BotonEditarUsuario';
 import ContadorRegistros from './ContadorDeRegistros';
+import "../Estilos/Tabla.css";
 
 
 const Tabla = ({ usuarios, onEditar, onEliminar }) => {
@@ -33,6 +34,8 @@ const Tabla = ({ usuarios, onEditar, onEliminar }) => {
           ))}
         </tbody>
       </table>
+      <br />
+      <br />
       <ContadorRegistros cantidadRegistros={cantidadRegistros} />
     </div>
   );

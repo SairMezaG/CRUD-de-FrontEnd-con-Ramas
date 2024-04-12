@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+/* import React, { useState } from 'react';
 import FormularioModal from './FormularioModal';
+import "../Estilos/botonDeRegistro.css";
 
 
 const BotonRegistrarUsuario = () => {
@@ -18,3 +19,4 @@ const BotonRegistrarUsuario = () => {
 };
 
 export default BotonRegistrarUsuario;
+ */

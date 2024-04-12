@@ -1,4 +1,5 @@
 import React from 'react';
+import "../Estilos/BotonEliminarUsuario.css";
 
 function BotonEliminarUsuario({ onEliminar, id }) {
 
@@ -10,7 +11,8 @@ function BotonEliminarUsuario({ onEliminar, id }) {
 
     return (
         <div>
-            <button onClick={confirmarEliminacion}>Eliminar</button>
+            <button className='botonEliminarUsuario'   onClick={confirmarEliminacion}>Eliminar</button>
+            
         </div>
     );
 }

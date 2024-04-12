@@ -1,0 +1,36 @@
+.botonGuardar{
+    background-color: blue;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.botonCancelar{
+    background-color: green;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+label{
+    margin-right: 10px;
+    margin-left: 10px;
+   
+}
+
+input{
+    padding: 10px;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form{
+    border: solid 2px;
+    margin: 10px;
+    border-radius: 7px;
+    background-color: antiquewhite;
+}
+

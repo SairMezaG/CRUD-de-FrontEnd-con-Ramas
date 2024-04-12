@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "../Estilos/BotonEditarUsuario.css";
 function BotonEditarUsuario({ onEditar, usuario }) {
 
     const confirmarEdicion = () => {
@@ -10,7 +10,7 @@ function BotonEditarUsuario({ onEditar, usuario }) {
 
     return (
         <div>
-            <button onClick={confirmarEdicion}>Editar</button>
+            <button className='botonEditarUsuario'   onClick={confirmarEdicion}>Editar</button>
         </div>
     );
 }

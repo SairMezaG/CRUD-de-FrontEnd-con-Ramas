@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../Estilos/BotonGuardar.css"
 
 const FormularioModal = ({ onGuardar, onClose }) => {
   const [id, setId] = useState('');
@@ -36,8 +37,10 @@ const FormularioModal = ({ onGuardar, onClose }) => {
           Descripción:
           <input type="text" value={descripcion} onChange={(e) => setDescripcion(e.target.value)} />
         </label>
-        <button type="submit">Guardar</button>
-        <button type="button" onClick={handleCancelar}>Cancelar</button>
+      
+          <button className='botonGuardar'   type="submit">Guardar</button>
+          <button className='botonCancelar'   type="button" onClick={handleCancelar}>Cancelar</button>
+       
       </form>
     </div>
   );

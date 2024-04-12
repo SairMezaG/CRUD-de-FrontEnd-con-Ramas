@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 const FormularioEdicion = ({ usuario, onGuardar, onClose }) => {
   const [nombre, setNombre] = useState(usuario.nombre);
   const [descripcion, setDescripcion] = useState(usuario.descripcion);
@@ -24,11 +25,11 @@ const FormularioEdicion = ({ usuario, onGuardar, onClose }) => {
         </label>
         <label>
           Nombre:
-          <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
+          <input  className='input'  type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
         </label>
         <label>
           Descripción:
-          <input type="text" value={descripcion} onChange={(e) => setDescripcion(e.target.value)} />
+          <input  className='input'  type="text" value={descripcion} onChange={(e) => setDescripcion(e.target.value)} />
         </label>
         <button type="submit">Guardar</button>
         <button type="button" onClick={handleCancelar}>Cancelar</button>
