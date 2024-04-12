@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import FormularioModal from './FormularioModal';
-import "../Estilos/BotonRegistrarUsuario.css";
+
 
 const BotonRegistrarUsuario = () => {
   const [mostrarFormulario, setMostrarFormulario] = useState(false);
